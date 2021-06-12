@@ -1,8 +1,9 @@
 import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import axios from "axios";
 import { setProducts } from "../redux/actions/productAction";
+import Product from "./Product";
 
 const ProductsListing = ({ data }) => {
   const dispatch = useDispatch();
@@ -21,8 +22,11 @@ const ProductsListing = ({ data }) => {
     fetchProducts();
   }, []);
 
-
-  return <Fragment>Content</Fragment>;
+  return (
+    <Fragment>
+      <Product />
+    </Fragment>
+  );
 };
 
 ProductsListing.propTypes = {

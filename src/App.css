@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.product-items {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.card-header {
+  height: 80px;
+  padding: 5px;
+}
